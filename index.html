@@ -1,11 +1,1055 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        .header {
+            /* width: 1002.3400268554688px; */
+            width: 100%;
+            height: 58.76416778564453px;
+            background-color: white;
+            display: flex;
+            padding-top: 11.14px;
+            padding-bottom: 11.14px;
+            padding-left: 100.23px;
+            padding-right: 100.23px;
+            gap: 43.85px;
+            /* position: fixed; */
+        }
+
+        .logo {
+            width: 107.53605651855469px;
+            height: 16.70566749572754px;
+            gap: 5.57px;
+
+            background-color: yellow;
+            margin-top: 9px;
+        }
+
+        .headdiv {
+            width: 650.4835815429688px;
+            height: 36.48994445800781px;
+            gap: 22.27px;
+
+            /* background-color: aliceblue; */
+            display: flex;
+            margin-left: 200px;
+            margin-top: 9px;
+        }
+
+        .hdiv1 {
+            width: 307.8217468261719px;
+            height: 17px;
+            gap: 16.71px;
+            /* background-color: yellow; */
+            display: flex;
+            justify-content: space-between;
+            /* justify-content: right; */
+            margin-top: 9px;
+            margin-left: 187px;
+        }
+
+        .hdiv11 {
+            width: 70.99908447265625px;
+            height: 17px;
+            gap: 5.57px;
+
+            font-size: 11.14px;
+            line-height: 16.71px;
+            text-align: center;
+            font-weight: 500;
+            /* font-family: inter; */
+        }
+
+        .hdiv12 {
+            width: 47px;
+            height: 17px;
+            gap: 5.57px;
+
+            font-size: 11.14px;
+            line-height: 16.71px;
+            text-align: center;
+            font-weight: 500;
+        }
+
+        .hdiv13 {
+            width: 62px;
+            height: 17px;
+            gap: 5.57px;
+            font-size: 11.14px;
+            line-height: 16.71px;
+            text-align: center;
+            font-weight: 500;
+        }
+
+        .hdiv14 {
+            width: 24px;
+            height: 17px;
+            gap: 5.57px;
+            font-size: 11.14px;
+            line-height: 16.71px;
+            text-align: center;
+            font-weight: 500;
+        }
+
+        .hdiv15 {
+            width: 37px;
+            height: 17px;
+            gap: 5.57px;
+            font-size: 11.14px;
+            line-height: 16.71px;
+            text-align: center;
+            font-weight: 500;
+        }
+
+        .registernow {
+            width: 133.25411987304688;
+            height: 36.48994445800781;
+            padding-top: 9.74px;
+            padding-right: 22.27px;
+            padding-bottom: 9.74px;
+            padding-left: 22.27px;
+            gap: 5.57px;
+            border-radius: 2.78px;
+            background: #4CAF4F;
+
+        }
+
+        .main1 {
+            /* width: 100%; */
+            height: 897.3541870117188px;
+            top: 58.47px;
+            gap: 27.84px;
+            /* display: flex; */
+            /* background-color: black; */
+        }
+
+        .m1 {
+            width: 100%;
+            height: 416.94561767578125px;
+            padding-top: 66.82px;
+            padding-right: 100.23px;
+            padding-bottom: 66.82px;
+            padding-left: 100.23px;
+            gap: 72.39px;
+            background-color: #F5F7FA;
+            display: flex;
+            /* overflow: hidden; */
+        }
+
+        .m11 {
+            width: 457.317626953125px;
+            height: 192.90127563476562px;
+            gap: 22.27px;
+            /* background-color: #4CAF4F; */
+            margin-top: 170px;
+            margin-left: 130px;
+        }
+
+        .m12 {
+            width: 272.1631774902344px;
+            height: 283.3002624511719px;
+            background-color: blueviolet;
+            margin-top: 130px;
+            margin-left: 50px;
+        }
+
+        .m111 {
+            width: 457.317626953125px;
+            height: 134.13711547851562px;
+            gap: 11.14px;
+            /* margin-top: 1px; */
+        }
+
+        .text {
+            width: 457.317626953125px;
+            height: 106px;
+            margin-top: 0px;
+        }
+
+        .text p {
+            font-family: Inter;
+            font-weight: 600;
+            font-size: 44.55px;
+            line-height: 52.9px;
+            letter-spacing: 0%;
+            /* background-color: yellow; */
+            margin-top: 0px;
+        }
+
+        .text2 {
+            width: 457.317626953125px;
+            height: 17px;
+
+        }
+
+        .text2 p {
+            font-family: Inter;
+            font-weight: 400;
+            font-size: 11.14px;
+            line-height: 16.71px;
+            letter-spacing: 0%;
+
+        }
+
+        .m11btn {
+            width: 89.54844665527344;
+            height: 36.48994445800781;
+            padding-top: 9.74px;
+            padding-right: 22.27px;
+            padding-bottom: 9.74px;
+            padding-left: 22.27px;
+            gap: 6.96px;
+            border-radius: 2.78px;
+            margin-top: 21px;
+            background-color: #4CAF4F;
+            color: white;
+            border-style: none;
+        }
+
+        .m2 {
+            /* width: 1002.3400268554688; */
+            height: 132.92047119140625px;
+            padding-right: 100.23px;
+            padding-left: 100.23px;
+            gap: 11.14px;
+            /* background-color: blue; */
+        }
+
+        .m21 {
+            width: 772.6370849609375px;
+            height: 53.56855773925781px;
+            gap: 5.57px;
+            /* background-color: yellow; */
+            margin-left: 145px;
+        }
+
+        .m211 {
+            width: 772.6370849609375px;
+            height: 31px;
+        }
+
+        .m211 p {
+            font-family: Inter;
+            font-weight: 600;
+            font-size: 25.06px;
+            line-height: 30.63px;
+            letter-spacing: 0%;
+            text-align: center;
+            color: #4D4D4D;
+        }
+
+        .m212 {
+            width: 772.6370849609375px;
+            height: 17px;
+            /* margin-bottom: 20px; */
+        }
+
+        .m212 p {
+            font-family: Inter;
+            font-weight: 400;
+            font-size: 11.14px;
+            line-height: 16.71px;
+            letter-spacing: 0%;
+            text-align: center;
+            color: #717171;
+        }
+
+        .m22 {
+            width: 801.8720092773438px;
+            height: 68.21480560302734px;
+            justify-content: space-between;
+            display: flex;
+            margin-left: 130px;
+            margin-top: 10px;
+            /* background-color: black; */
+        }
+
+        .m22logo {
+            width: 33.41133499145508px;
+            height: 33.41133499145508px;
+            border-radius: 5.57px;
+            background-color: yellow;
+            margin-top: 20px;
+        }
+
+        .m3 {
+            /* width: 1002.3400268554688; */
+            height: 291.80255126953125px;
+            gap: 11.14px;
+            /* background-color: yellow; */
+        }
+
+        .m31 {
+            /* width: 1002.3400268554688px; */
+            height: 84.56855773925781px;
+            /* background-color: aqua; */
+            gap: 5.57px;
+        }
+
+        .m311 {
+            width: 377.2696533203125px;
+            height: 62px;
+            margin-left: 490px;
+        }
+
+        .m311 p {
+            font-family: Inter;
+            font-weight: 600;
+            font-size: 25.06px;
+            line-height: 30.63px;
+            letter-spacing: 0%;
+            text-align: center;
+
+        }
+
+        .m312 {
+            /* width: 1002.3400268554688; */
+            height: 17px;
+        }
+
+        .m312 p {
+            font-family: Inter;
+            font-weight: 400;
+            font-size: 11.14px;
+            line-height: 16.71px;
+            letter-spacing: 0%;
+            text-align: center;
+            color: #717171;
+        }
+
+        .m32 {
+            /* width: 1002.3400268554688px; */
+            /* width: 100%; */
+            height: 196.09689331054688px;
+            display: flex;
+            justify-content: space-between;
+            padding-right: 100.23px;
+            padding-left: 100.23px;
+            /* background-color: yellowgreen; */
+        }
+
+        .m321 {
+            width: 208.12477111816406px;
+            height: 170.09689331054688px;
+            gap: 5.57px;
+            padding-top: 16.71px;
+            padding-right: 22.27px;
+            padding-bottom: 16.71px;
+            padding-left: 22.27px;
+            border-radius: 5.57px;
+            /* background-color: blue; */
+        }
+
+        .m3211 {
+            width: 185.85055541992188px;
+            height: 101.11700439453125px;
+            gap: 11.14px;
+            /* background-color: aqua; */
+            margin-left: 10px;
+        }
+
+        .m3212 {
+            width: 174.71343994140625px;
+            height: 42px;
+            gap: 5.57px;
+            /* background-color: #4CAF4F; */
+            margin-top: 10px;
+            margin-left: 14px;
+        }
+
+        .m32111 {
+            width: 45.24452209472656px;
+            height: 38.979888916015625px;
+            margin-left: 60px;
+            background-color: yellow;
+        }
+
+        .m32112 {
+            width: 185.85055541992188px;
+            height: 51px;
+            /* margin-bottom: 13px; */
+        }
+
+        .m32112 p {
+            font-family: Inter;
+            font-weight: 700;
+            font-size: 19.49px;
+            line-height: 25.06px;
+            letter-spacing: 0%;
+            text-align: center;
+
+        }
+
+        .m3212 p {
+            font-family: Inter;
+            font-weight: 400;
+            font-size: 9.74px;
+            line-height: 13.92px;
+            letter-spacing: 0%;
+            text-align: center;
+            color: #717171;
+        }
+
+        .main2 {
+            /* width: 1002.3400268554688; */
+            height: 1565.63330078125px;
+            top: 982.15px;
+            left: 0.7px;
+            gap: 33.41px;
+            /* background-color: blue; */
+            margin-top: 150px;
+        }
+
+        .main21 {
+            /* width: 1002.3400268554688; */
+            height: 301.3980712890625px;
+            /* background-color: yellow; */
+            display: flex;
+        }
+
+        .main211 {
+            width: 307.6627197265625px;
+            height: 301.3980712890625px;
+            background-color: blue;
+            margin-left: 200px;
+        }
+
+        .main212 {
+            width: 460.1019287109375px;
+            height: 187.90127563476562px;
+            gap: 22.27px;
+            /* background-color: gray; */
+            margin-left: 50px;
+            margin-top: 50px;
+        }
+
+        .main2121 {
+            width: 418.3377380371094px;
+            height: 129.13711547851562px;
+            gap: 11.14px;
+        }
+
+        .main21211 {
+            width: 418.3377380371094px;
+            height: 62px;
+        }
+
+        .main21211 p {
+            font-family: Inter;
+            font-weight: 600;
+            font-size: 25.06px;
+            line-height: 30.63px;
+            letter-spacing: 0%;
+        }
+
+        .main21212 {
+            width: 418.3377380371094px;
+            height: 56px;
+
+        }
+
+        .main21212 p {
+            font-family: Inter;
+            font-weight: 400;
+            font-size: 9.74px;
+            line-height: 13.92px;
+            letter-spacing: 0%;
+
+        }
+
+        .main2121btn {
+            width: 105.54844665527344px;
+            height: 36.48994445800781px;
+            gap: 6.96px;
+            padding-top: 9.74px;
+            padding-right: 22.27px;
+            padding-bottom: 9.74px;
+            padding-left: 22.27px;
+            border-radius: 2.78px;
+            background-color: #4CAF4F;
+            border-style: none;
+            font-family: Inter;
+            font-weight: 500;
+            font-size: 11.14px;
+            line-height: 16.71px;
+            letter-spacing: 0%;
+            text-align: center;
+
+        }
+
+        .main22 {
+            /* width: 1002.3400268554688; */
+            height: 202.93966674804688px;
+            justify-content: space-between;
+            padding-top: 44.55px;
+            padding-right: 100.23px;
+            padding-bottom: 44.55px;
+            padding-left: 100.23px;
+            background-color: #F5F7FA;
+            margin-top: 15px;
+        }
+
+        .main221 {
+            width: 375.87750244140625px;
+            height: 84.56855773925781px;
+            gap: 5.57px;
+
+        }
+
+        .main2211 {
+            width: 283.996337890625px;
+            height: 62px;
+            gap: 5.57px;
+
+        }
+
+        .main2211 p {
+            font-family: Inter;
+            font-weight: 600;
+            font-size: 25.06px;
+            line-height: 30.63px;
+            letter-spacing: 0%;
+
+        }
+
+        .main2212 {
+            width: 375.87750244140625px;
+            height: 17px;
+
+        }
+
+        .main2212 p {
+            font-family: Inter;
+            font-weight: 400;
+            font-size: 11.14px;
+            line-height: 16.71px;
+            letter-spacing: 0%;
+            color: #18191F;
+        }
+
+        .main23 {
+            /* width: 1002.3400268554688; */
+            height: 301.3980712890625px;
+            /* background-color: yellow; */
+            display: flex;
+            margin-top: 15px;
+        }
+
+        .main231 {
+            width: 307.6627197265625px;
+            height: 301.3980712890625px;
+            background-color: blue;
+            margin-left: 200px;
+        }
+
+        .main232 {
+            width: 460.1019287109375px;
+            height: 215.90127563476562px;
+            gap: 22.27px;
+            /* background-color: gray; */
+            margin-left: 50px;
+            margin-top: 50px;
+        }
+
+        .main2321 {
+            width: 418.3377380371094px;
+            height: 129.13711547851562px;
+            gap: 11.14px;
+        }
+
+        .main23211 {
+            width: 418.3377380371094px;
+            height: 62px;
+        }
+
+        .main23211 p {
+            font-family: Inter;
+            font-weight: 600;
+            font-size: 25.06px;
+            line-height: 30.63px;
+            letter-spacing: 0%;
+        }
+
+        .main23212 {
+            width: 418.3377380371094px;
+            height: 56px;
+        }
+
+        .main23212 p {
+            font-family: Inter;
+            font-weight: 400;
+            font-size: 9.74px;
+            line-height: 13.92px;
+            letter-spacing: 0%;
+
+        }
+
+        .main2321btn {
+            width: 105.54844665527344px;
+            height: 36.48994445800781px;
+            gap: 6.96px;
+            padding-top: 9.74px;
+            padding-right: 22.27px;
+            padding-bottom: 9.74px;
+            padding-left: 22.27px;
+            border-radius: 2.78px;
+            background-color: #4CAF4F;
+            border-style: none;
+            font-family: Inter;
+            font-weight: 500;
+            font-size: 11.14px;
+            line-height: 16.71px;
+            letter-spacing: 0%;
+            text-align: center;
+            margin-top: 27px;
+        }
+
+        .main24 {
+            /* width: 1002.3400268554688; */
+            height: 271.46710205078125px;
+            gap: 54.29px;
+            padding-top: 22.27px;
+            padding-right: 100.23px;
+            padding-bottom: 22.27px;
+            padding-left: 100.23px;
+            background-color: #F5F7FA;
+            margin-top: 15px;
+            display: flex;
+        }
+
+        .main241 {
+            width: 226.91864013671875px;
+            height: 226.91864013671875px;
+            border-radius: 5.57px;
+            background-color: blue;
+            margin-left: 120px;
+            margin-top: 20px;
+        }
+
+        .main242 {
+            width: 520.6599731445312px;
+            height: 226.3912353515625px;
+            gap: 22.27px;
+            margin-top: 20px;
+        }
+
+        .main2421 {
+            width: 520.6599731445312px;
+            height: 170.70567321777344px;
+            gap: 11.14px;
+        }
+
+        .main24211 {
+            width: 520.6599731445312px;
+            height: 90px;
+        }
+
+        .main24211 p {
+            font-family: Inter;
+            font-weight: 500;
+            font-size: 11.14px;
+            line-height: 16.71px;
+            letter-spacing: 0%;
+            color: #717171;
+        }
+
+        .main24212 {
+            width: 520.6599731445312px;
+            height: 42.56855773925781px;
+            gap: 5.57px;
+            /* margin-bottom: 105px; */
+        }
+
+        .main242121 {
+            width: 520.6599731445312px;
+            height: 20px;
+        }
+
+        .main242121 p {
+            font-family: Inter;
+            font-weight: 600;
+            font-size: 13.92px;
+            line-height: 19.49px;
+            letter-spacing: 0%;
+            color: #4CAF4F;
+            /* margin-bottom: 20px; */
+        }
+
+        .main242122 {
+            width: 520.6599731445312px;
+            height: 17px;
+        }
+
+        .main242122 p {
+            font-family: Inter;
+            font-weight: 400;
+            font-size: 11.14px;
+            line-height: 16.71px;
+            letter-spacing: 0%;
+            color: #89939E;
+        }
+
+        .main2422 {
+            width: 520.6599731445312px;
+            height: 33.41133499145508px;
+            gap: 22.27px;
+            display: flex;
+        }
+
+        .main24221 {
+            width: 343.1622619628906px;
+            height: 33.41133499145508px;
+            gap: 28.54px;
+            display: flex;
+            margin-top: 15px;
+        }
+
+        .main24221logo {
+            width: 33.41133499145508px;
+            height: 33.41133499145508px;
+            border-radius: 5.57px;
+            background-color: yellow;
+        }
+
+        .main24222 {
+            width: 155.22349548339844;
+            height: 31.13711166381836;
+            gap: 5.57px;
+            padding: 5.57px;
+        }
+
+        .main24222 p {
+            font-family: Inter;
+            font-weight: 600;
+            font-size: 13.92px;
+            line-height: 19.49px;
+            letter-spacing: 0%;
+            color: #4CAF4F;
+        }
+
+        .main25 {
+            /* width: 1002.3400268554688px; */
+            height: 354.5072937011719px;
+            gap: 11.14px;
+            background-color: yellow;
+            margin-top: 15px;
+            /* display: flex; */
+        }
+
+        .main251 {
+            width: 772.6370849609375px;
+            height: 89.56855773925781px;
+            gap: 5.57px;
+            background-color: yellowgreen;
+            margin-left: 250px;
+            /* display: flex; */
+        }
+
+        .main251 p {
+            font-family: Inter;
+            font-weight: 600;
+            font-size: 25.06px;
+            line-height: 20.63px;
+            letter-spacing: 0%;
+            text-align: center;
+
+        }
+
+        .main252 {
+            width: 437.1316223144531px;
+            height: 51px;
+            margin-left: 180px;
+        }
+
+        .main252 p {
+            font-family: Inter;
+            font-weight: 400;
+            font-size: 11.14px;
+            line-height: 16.71px;
+            letter-spacing: 0%;
+            text-align: center;
+        }
+
+        .main253 {
+            /* width: 1002.3400268554688; */
+            height: 255.8016357421875px;
+            justify-content: space-between;
+            padding-right: 100.23px;
+            padding-left: 100.23px;
+            display: flex;
+        }
+
+        .main253d {
+            width: 256.153564453125px;
+            height: 255.8016357421875px;
+            background-color: blue;
+            /* display: flex; */
+        }
+
+        .main25img {
+            width: 256.153564453125px;
+            height: 199.07586669921875px;
+            border-radius: 5.57px;
+            background-color: yellow;
+            /* display: ; */
+        }
+
+        .main253down {
+            width: 220.65402221679688px;
+            height: 123.54844665527344px;
+            gap: 11.14px;
+            padding: 11.14px;
+            border-radius: 5.57px;
+            background-color: #F5F7FA;
+            box-shadow: 0px 5.57px 11.14px 0px #ABBED166;
+            display: flex;
+            /* margin-bottom: 90px; */
+        }
+    </style>
 </head>
+
 <body>
-    
+    <div class="header">
+        <div class="logo"></div>
+        <div class="headdiv">
+            <div class="hdiv1">
+                <div class="hdiv11">Home</div>
+                <div class="hdiv12">Features</div>
+                <div class="hdiv13">Community</div>
+                <div class="hdiv14">Blog</div>
+                <div class="hdiv15">Pricing</div>
+            </div>
+            <div class="registernow">
+                Register Now
+            </div>
+        </div>
+    </div>
+    <div class="main1">
+        <div class="m1">
+            <div class="m11">
+                <div class="m111">
+                    <div class="text">
+                        <p>Lessons and insights from 8 years</p>
+                        <!-- <p>from 8 years</p> -->
+                    </div>
+                    <div class="text2">
+                        <p>Where to grow your business as a photographer: site or social media?</p>
+                    </div>
+                </div>
+                <button class="m11btn">Register</button>
+            </div>
+            <div class="m12">
+
+            </div>
+        </div>
+        <div class="m2">
+            <div class="m21">
+                <div class="m211">
+                    <p>Our Clients</p>
+                </div>
+                <div class="m212">
+                    <p>We have been working with some Fortune 500+ clients</p>
+                </div>
+            </div>
+            <div class="m22">
+                <div class="m22logo"></div>
+                <div class="m22logo"></div>
+                <div class="m22logo"></div>
+                <div class="m22logo"></div>
+                <div class="m22logo"></div>
+                <div class="m22logo"></div>
+                <div class="m22logo"></div>
+            </div>
+        </div>
+        <div class="m3">
+            <div class="m31">
+                <div class="m311">
+                    <p>Manage your entire community in a single system</p>
+                </div>
+                <div class="m312">
+                    <p>Who is Nextcent suitable for?</p>
+                </div>
+            </div>
+            <div class="m32">
+                <div class="m321">
+                    <div class="m3211">
+                        <div class="m32111">
+
+                        </div>
+                        <div class="m32112">
+                            <p>Membership Organisations</p>
+                        </div>
+                    </div>
+                    <div class="m3212">
+                        <p>Our membership management software provides full automation of membership renewals and
+                            payments</p>
+                    </div>
+                </div>
+                <div class="m321">
+                    <div class="m3211">
+                        <div class="m32111">
+
+                        </div>
+                        <div class="m32112">
+                            <p>National Associations</p>
+                        </div>
+                    </div>
+                    <div class="m3212">
+                        <p>Our membership management software provides full automation of membership renewals and
+                            payments</p>
+                    </div>
+                </div>
+                <div class="m321">
+                    <div class="m3211">
+                        <div class="m32111">
+
+                        </div>
+                        <div class="m32112">
+                            <p>Clubs And Groups</p>
+                        </div>
+                    </div>
+                    <div class="m3212">
+                        <p>Our membership management software provides full automation of membership renewals and
+                            payments</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main2">
+        <div class="main21">
+            <div class="main211">
+
+            </div>
+            <div class="main212">
+                <div class="main2121">
+                    <div class="main21211">
+                        <p>The unseen of spending three years at Pixelgrade</p>
+                    </div>
+                    <div class="main21212">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet justo ipsum. Sed
+                            accumsan quam vitae est varius fringilla. Pellentesque placerat vestibulum lorem sed porta.
+                            Nullam mattis tristique iaculis. Nullam pulvinar sit amet risus pretium auctor. Etiam quis
+                            massa pulvinar, aliquam quam vitae, tempus sem. Donec elementum pulvinar odio.</p>
+                    </div>
+                    <button class="main2121btn">Learn More</button>
+                </div>
+            </div>
+        </div>
+        <div class="main22">
+            <div class="main221">
+                <div class="main2211">
+                    <p><span style="color: #4D4D4D;">Helping a local</span> <span style="color: #4CAF4F;">business
+                            reinvent itself</span></p>
+                </div>
+                <div class="main2212">
+                    <p>We reached here with our hard work and dedication</p>
+                </div>
+            </div>
+        </div>
+        <div class="main23">
+            <div class="main231">
+
+            </div>
+            <div class="main232">
+                <div class="main2321">
+                    <div class="main23211">
+                        <p>How to design your site footer like we did</p>
+                    </div>
+                    <div class="main23212">
+                        <p>Donec a eros justo. Fusce egestas tristique ultrices. Nam tempor, augue nec tincidunt
+                            molestie, massa nunc varius arcu, at scelerisque elit erat a magna. Donec quis erat at
+                            libero ultrices mollis. In hac habitasse platea dictumst. Vivamus vehicula leo dui, at porta
+                            nisi facilisis finibus. In euismod augue vitae nisi ultricies, non aliquet urna tincidunt.
+                            Integer in nisi eget nulla commodo faucibus efficitur quis massa. Praesent felis est,
+                            finibus et nisi ac, hendrerit venenatis libero. Donec consectetur faucibus ipsum id gravida.
+                        </p>
+                    </div>
+                    <button class="main2321btn">Learn More</button>
+                </div>
+            </div>
+        </div>
+        <div class="main24">
+            <div class="main241">
+
+            </div>
+            <div class="main242">
+                <div class="main2421">
+                    <div class="main24211">
+                        <p>Maecenas dignissim justo eget nulla rutrum molestie. Maecenas lobortis sem dui, vel rutrum
+                            risus tincidunt ullamcorper. Proin eu enim metus. Vivamus sed libero ornare, tristique quam
+                            in, gravida enim. Nullam ut molestie arcu, at hendrerit elit. Morbi laoreet elit at ligula
+                            molestie, nec molestie mi blandit. Suspendisse cursus tellus sed augue ultrices, quis
+                            tristique nulla sodales. Suspendisse eget lorem eu turpis vestibulum pretium. Suspendisse
+                            potenti. Quisque malesuada enim sapien, vitae placerat ante feugiat eget. Quisque vulputate
+                            odio neque, eget efficitur libero condimentum id. Curabitur id nibh id sem dignissim finibus
+                            ac sit amet magna.</p>
+                    </div>
+                    <div class="main24212">
+                        <div class="main242121">
+                            <p>Tim Smith</p>
+                        </div>
+                        <div class="main242122">
+                            <p>British Dragon Boat Racing Association</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="main2422">
+                    <div class="main24221">
+                        <div class="main24221logo"></div>
+                        <div class="main24221logo"></div>
+                        <div class="main24221logo"></div>
+                        <div class="main24221logo"></div>
+                        <div class="main24221logo"></div>
+                        <div class="main24221logo"></div>
+                    </div>
+                    <div class="main24222">
+                        <p>Meet all customers -></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main25">
+            <div class="main251">
+                <p>Caring is the new marketing</p>
+                <div class="main252">
+                    <p>The Nextcent blog is the best place to read about the latest membership insights, trends and
+                        more. See who's joining the community, read about how our community are increasing their
+                        membership income and lot's more.​</p>
+                </div>
+            </div>
+            <div class="main253">
+                <div class="main253d">
+                    <div class="main25img">
+
+                    </div>
+                    <div class="main253down">
+
+                    </div>
+                </div>
+                <div class="main253d">
+                    <div class="main25img">
+
+                    </div>
+                </div>
+                <div class="main253d">
+                    <div class="main25img">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
