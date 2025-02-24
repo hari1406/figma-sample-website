@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexcent</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+            color: black;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background-color: white;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+        nav ul li {
+            display: inline;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+            font-size: 16px;
+        }
+        .register-button {
+            background-color: green;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        .hero {
+            display: flex;
+            align-items: center;
+            padding: 100px;
+            margin-left: 200px;
+        }
+        .hero img {
+            width: 50%;
+        }
+        .hero-text {
+            color: grey;
+            font-size: 24px;
+        }
+        .hero-subtext {
+            color: green;
+            font-size: 24px;
+        }
+        .light-green-button {
+            background-color: lightgreen;
+            color: black;
+            padding: 10px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+        }
+        .clients, .stats, .blog, .footer {
+            background-color: #a1a1a1;
+            align-items: center;
+            text-align: center;
+            padding: 50px;
+        }
+        .company-logos {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .content-section {
+            justify-items: center;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            padding: 20px;
+        }
+        .content-text {
+            padding-left: 50px;
+            margin:50px;
+        }
+        .bold-text {
+            font-weight: bold;
+            font-size: 20px;
+        }
+        .box-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .box {
+            background-color: black;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            width: 30%;
+        }
+        .footer {
+            background-color: #222;
+            color: white;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Nexcent</div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="features.html">Features</a></li>
+                <li><a href="community.html">Community</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="register.html" class="register-button">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero">
+        <div>
+            <p class="hero-text">Lessons and insights</p>
+            <p class="hero-subtext">for the past 8 years.</p>
+            <a href="register.html" class="light-green-button">Register</a>
+        </div>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6q-JpEjdCgL_EvWB0sdp-ebe7LEqXA_LlgA&s" alt="Hero Image" height="400px" width="100px">
+    </section>
+    <section class="clients">
+        <h2>Our Clients</h2>
+        <div class="company-logos">
+            <span>Company 1</span>
+            <span>Company 2</span>
+            <span>Company 3</span>
+            <span>Company 4</span>
+            <span>Company 5</span>
+            <span>Company 6</span>
+        </div>
+    </section>
+    <section class="content-section">
+        <img src="https://png.pngtree.com/png-clipart/20230801/original/pngtree-men-or-managers-study-analytical-data-on-huge-cartoon-monitor-picture-image_7802747.png" alt="Image" height="300px" width="500px">
+        <div class="content-text">
+            <h2 style="color: lightgreen;">The unseen of spending three years at Pixelgrade</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+            <a href="learnmore.html" class="light-green-button">Learn More</a>
+        </div>
+    </section>
+    <section class="stats">
+        <p class="bold-text">Helping a local business reinvent itself</p>
+        <p>2,245,341 Members</p>
+        <p>46,328 Clubs</p>
+        <p>828,867 Payments</p>
+        <p>1,926,436 Event Bookings</p>
+        <small>We reached here with our hard work and dedication</small>
+    </section>
+    <section class="content-section">
+        <img src="https://e7.pngegg.com/pngimages/130/610/png-clipart-data-quality-data-analysis-business-business-service-people.png" alt="Data Analysis">
+        <div class="content-text">
+            <h2 style="color: lightgreen;">How to design your site footer like we did</h2>
+            <p>Donec a eros justo. Fusce egestas tristique ultrices...</p>
+            <a href="signup.html" class="light-green-button">Sign Up</a>
+            <a href="readmore.html" class="light-green-button">Read More</a>
+        </div>
+    </section>
+    <section class="blog">
+        <h2>Caring is the new marketing</h2>
+        <p>The Nextcent blog is the best place to read about the latest membership insights...</p>
+        <div class="box-container">
+            <div class="box">Creating Streamlined Safeguarding Processes with OneRen<br><a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvjI1k7QFz8N83s5aiztkiTHl4EMf330qZYA&s" style="color: lightgreen;">Read More</a></div>
+            <div class="box">What are your safeguarding responsibilities?<br><a href="https://img.freepik.com/free-photo/person-working-laptop-desk_9975-24478.jpg?w=360" style="color: lightgreen;">Read More</a></div>
+            <div class="box">Revamping the Membership Model with Triathlon Australia<br><a href="https://images.pexels.com/videos/1851768/free-video-1851768.jpg" style="color: lightgreen;">Read More</a></div>
+        </div>
+    </section>
+    <section class="footer">
+        <p>Copyright © 2020 Landify UI Kit.</p>
+        <p>About Us | Help Center | Blog | Contact Us | Terms of Service | Privacy Policy</p>
+    </section>
+</body>
+</html>
